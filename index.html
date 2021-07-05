@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image ui</title>
+    <style>
+     
+        body{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+
+        .sidebar{
+            float: left;
+            /* position:fixed; */
+            height:100%;
+            width:10%;
+            background-color: white;
+            box-shadow: whitesmoke;
+            border-right: solid 1px #eee;
+        }
+        .siderimg1 img {
+           margin-left: -10px;
+        }
+        .mainscreen{
+      margin-top: 100px;
+           
+            background-color: gainsboro;
+        
+ position: absolute;
+  width:100%; 
+  height:100%;
+   margin-left: 10%;
+   z-index:- 1;
+        }
+.inputs{
+    margin-top: 30px;
+    margin-left: 15%;
+
+}
+.urlsclass{
+    border: none;
+    height:25px;
+    width:80%;
+    border-radius: 7px;
+}
+.centers span{
+        margin-left:50% ;
+    }
+.uploads{
+    height:100px;
+    width:100px;
+    background-color:white;
+    margin-left: 15%;
+    display:block;
+}
+.uploads p{
+    
+    text-align: center;
+    color:black;
+}
+.puploads{
+    position: relative;
+    top:40%;
+  
+    font: bold;
+    color:black;
+}
+.settings img{
+    margin-left: -10px;
+}
+.person img{
+    margin-left:-10px;
+}
+.lesson img{
+    background-color: white;
+    margin-left: -10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="siderimg1"> <img src="l12.jpg" alt="" srcset=""></div>
+              <div class="person">
+                  <img src="per.jpg" alt="" srcset="">
+              </div>
+            
+              <div class="settings">
+                  <img src="sett.jpg" alt="" srcset="">
+              </div>
+        </div>
+        <div class="mainscreen">
+            <div class="videos">
+                <span style="color: gray;" >&#x25C2; videos</span>
+            </div>
+            <div class="centers">
+
+                <div class="inputs">
+                    <input type="url" value="insert url here" name="urls" id="" class="urlsclass">
+    
+                </div>
+                <span >or</span>
+                <div class="uploads">
+                        
+                 <p class="puploads">upload</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
